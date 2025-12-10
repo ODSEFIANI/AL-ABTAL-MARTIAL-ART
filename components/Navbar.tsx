@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { APP_NAME } from '../constants';
+import { APP_NAME, LOGO_URL } from '../constants';
 
 export const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -24,11 +24,13 @@ export const Navbar: React.FC = () => {
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-primary/95 shadow-lg py-2' : 'bg-transparent py-4'}`}>
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <div className="flex items-center space-x-2">
-           {/* Placeholder for Logo if image provided, else text */}
-          <div className="h-10 w-10 bg-accent rounded-full flex items-center justify-center font-bold text-white border-2 border-white">
-            AA
-          </div>
+       <div className="flex items-center space-x-3">
+           {/* Logo Image */}
+           <img 
+              src={LOGO_URL} 
+              alt={`${APP_NAME} Logo`} 
+              className="h-12 w-auto object-contain"
+           />
           <a href="#" className="text-xl md:text-2xl font-heading font-bold tracking-wider text-white">
             {APP_NAME}
           </a>

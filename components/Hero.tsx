@@ -14,7 +14,7 @@ export const Hero: React.FC = () => {
           playsInline
           className="w-full h-full object-cover"
         >
-          <source src={HERO_VIDEO_URL} type="video/mp4" />
+         <source src={HERO_VIDEO_URL} type="video/mp4" />
           Votre navigateur ne supporte pas la vidéo.
         </video>
       </div>
