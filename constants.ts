@@ -2,7 +2,7 @@ import { Discipline, DisciplineInfo, Trainer } from "./types";
 
 // Placeholder images - In a real deployment, replace these with the uploaded assets
 export const LOGO_URL = "./logo.gif"; // Replace with actual logo URL
-export const HERO_VIDEO_URL = "./public/videoblack.mp4"; // Martial Arts placeholder
+export const HERO_VIDEO_URL = "./videoblack.mp4"; // Martial Arts placeholder
 export const ABOUT_IMAGE_URL = "./trainer.jpg";
 
 export const APP_NAME = "ASSOCIATION AL ABTAL";
@@ -22,7 +22,7 @@ export const DISCIPLINES: DisciplineInfo[] = [
     name: Discipline.KICK_BOXING,
     description:
       "Un sport de combat dynamique combinant les techniques de boxe anglaise et les coups de pied.",
-    image: "./assets/kickbox.avif",
+    image: "./kickbox.avif",
     schedules: [
       { day: "Lundi", hours: "18:00 - 19:30", group: "Enfants" },
       { day: "Mercredi", hours: "18:00 - 19:30", group: "Enfants" },
@@ -34,7 +34,7 @@ export const DISCIPLINES: DisciplineInfo[] = [
     name: Discipline.MUAY_THAI,
     description:
       "L'art des huit membres. Utilisez les poings, les pieds, les coudes et les genoux.",
-    image: "/assets/muythai.jpeg",
+    image: "/muythai.jpeg",
     schedules: [
       { day: "Mardi", hours: "19:00 - 20:30", group: "Tous" },
       { day: "Jeudi", hours: "19:00 - 20:30", group: "Tous" },
