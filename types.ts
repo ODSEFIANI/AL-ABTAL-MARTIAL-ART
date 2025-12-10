@@ -1,13 +1,14 @@
 export enum Discipline {
-  KICK_BOXING = 'Kick Boxing',
-  MUAY_THAI = 'Muay Thai',
-  FULL_CONTACT = 'Full Contact'
+  KIDS_FULL_FIGHT = "Enfants – Full Fight",
+  FULL_KICK_THAI = "Full – Kick – Thai",
+  QWAN_KI_DO = "Qwan Ki Do / Kung Fu Vietnamien",
+  AEROBIC_WOMEN = "Femmes – Aérobic / Danse orientale",
 }
 
 export interface ClassSchedule {
   day: string;
   hours: string;
-  group: 'Enfants' | 'Adultes' | 'Tous' | 'Compétition';
+  group: "Enfants" | "Adultes" | "Tous" | "Compétition" | "Femmes";
 }
 
 export interface DisciplineInfo {
@@ -26,7 +27,7 @@ export interface Trainer {
 }
 
 export interface ChatMessage {
-  role: 'user' | 'model';
+  role: "user" | "model";
   text: string;
   timestamp: number;
 }

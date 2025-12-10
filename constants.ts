@@ -1,7 +1,7 @@
 import { Discipline, DisciplineInfo, Trainer } from "./types";
 
 // Placeholder images - In a real deployment, replace these with the uploaded assets
-export const LOGO_URL = "./logo.gif"; // Replace with actual logo URL
+export const LOGO_URL = "./test2.png"; // Replace with actual logo URL
 export const HERO_VIDEO_URL = "./videoblack.mp4"; // Martial Arts placeholder
 export const ABOUT_IMAGE_URL = "./trainer.jpg";
 
@@ -18,39 +18,56 @@ export const TRAINER_INFO: Trainer = {
 
 export const DISCIPLINES: DisciplineInfo[] = [
   {
-    id: "kickboxing",
-    name: Discipline.KICK_BOXING,
+    id: "kids_full_fight",
+    name: Discipline.KIDS_FULL_FIGHT,
     description:
-      "Un sport de combat dynamique combinant les techniques de boxe anglaise et les coups de pied.",
-    image: "./kickbox.avif",
+      "Initiation aux arts martiaux et sports de combat adaptée aux enfants. Discipline, motricité et respect.",
+    image:
+      "https://images.unsplash.com/photo-1555597673-b21d5c935865?q=80&w=2072&auto=format&fit=crop",
     schedules: [
-      { day: "Lundi", hours: "18:00 - 19:30", group: "Enfants" },
-      { day: "Mercredi", hours: "18:00 - 19:30", group: "Enfants" },
-      { day: "Vendredi", hours: "19:30 - 21:00", group: "Adultes" },
+      { day: "Lundi", hours: "18:00 - 19:00", group: "Enfants" },
+      { day: "Mercredi", hours: "18:00 - 19:00", group: "Enfants" },
+      { day: "Vendredi", hours: "18:00 - 19:00", group: "Enfants" },
     ],
   },
   {
-    id: "muaythai",
-    name: Discipline.MUAY_THAI,
+    id: "full_kick_thai",
+    name: Discipline.FULL_KICK_THAI,
     description:
-      "L'art des huit membres. Utilisez les poings, les pieds, les coudes et les genoux.",
+      "Entraînement complet combinant Kick Boxing, Muay Thai et Full Contact. Intensité et technique pour tous niveaux.",
+    image: "/full.jpeg",
+    schedules: [
+      { day: "Lundi", hours: "19:00 - 20:00", group: "Adultes" },
+      { day: "Lundi", hours: "20:00 - 21:00", group: "Adultes" },
+      { day: "Mercredi", hours: "19:00 - 20:00", group: "Adultes" },
+      { day: "Mercredi", hours: "20:00 - 21:00", group: "Adultes" },
+      { day: "Vendredi", hours: "19:00 - 20:00", group: "Adultes" },
+      { day: "Vendredi", hours: "20:00 - 21:00", group: "Adultes" },
+    ],
+  },
+  {
+    id: "qwankido",
+    name: Discipline.QWAN_KI_DO,
+    description:
+      "Art martial sino-vietnamien. Techniques de mains, pieds, sauts, ciseaux et armes traditionnelles.",
     image: "/muythai.jpeg",
     schedules: [
-      { day: "Mardi", hours: "19:00 - 20:30", group: "Tous" },
-      { day: "Jeudi", hours: "19:00 - 20:30", group: "Tous" },
-      { day: "Samedi", hours: "10:00 - 12:00", group: "Compétition" },
+      { day: "Mardi", hours: "19:30 - 20:30", group: "Tous" },
+      { day: "Jeudi", hours: "19:30 - 20:30", group: "Tous" },
+      { day: "Samedi", hours: "19:30 - 20:30", group: "Tous" },
     ],
   },
   {
-    id: "fullcontact",
-    name: Discipline.FULL_CONTACT,
+    id: "aerobic_dance",
+    name: Discipline.AEROBIC_WOMEN,
     description:
-      "Discipline, rapidité et technique. Idéal pour canaliser l'énergie des jeunes.",
-    image: "/assets/full.jpeg",
+      "Séances 100% femmes combinant fitness, aérobic et danse orientale pour la forme et le bien-être.",
+    image:
+      "https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1996&auto=format&fit=crop",
     schedules: [
-      { day: "Lundi", hours: "19:30 - 21:00", group: "Adultes" },
-      { day: "Mercredi", hours: "19:30 - 21:00", group: "Adultes" },
-      { day: "Samedi", hours: "14:00 - 16:00", group: "Enfants" },
+      { day: "Mardi", hours: "18:00 - 19:00", group: "Femmes" },
+      { day: "Jeudi", hours: "18:00 - 19:00", group: "Femmes" },
+      { day: "Samedi", hours: "18:00 - 19:00", group: "Femmes" },
     ],
   },
 ];
