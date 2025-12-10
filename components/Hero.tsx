@@ -59,14 +59,7 @@ export const Hero: React.FC = () => {
         </video>
         {/* Optional: Play button for Low Power Mode */}
         {videoError && (
-          <div className="absolute inset-0 z-20 flex items-center justify-center">
-            <button
-              onClick={() => videoRef.current?.play()}
-              className="bg-white/20 backdrop-blur-sm px-6 py-3 rounded-full text-white font-semibold hover:bg-white/30 transition-all"
-            >
-              ▶ Lire la vidéo
-            </button>
-          </div>
+          <div className="absolute inset-0 z-20 flex items-center justify-center"></div>
         )}
       </div>
 
